@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Kanit', sans-serif;
+  background: linear-gradient(to right,  #c8c9cafa);
+  padding: 40px;
+  margin: 0;
+  color: #000000;
+}
+
+.table-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  overflow-x: auto;
+  box-shadow: 0 12px 30px rgb(245, 237, 255);
+  padding: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 16px 14px;
+  border: 1px solid #000000;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+th {
+  background-color: #f0f4f8;
+  font-weight: 600;
+}
+
+.header-main th {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.header-sub th {
+  background-color: #f9fbff;
+  color: #34495e;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7fbff;
+}
+
+tbody tr:hover {
+  background-color: #e3f2fd;
+  transition: background-color 0.3s ease;
+}
+
+input[type="file"] {
+  max-width: 140px;
+  padding: 6px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+img:hover {
+  transform: scale(1.08);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .header-main th {
+    font-size: 18px;
+  }
+}
+.table-container {
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.btn {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #5e0eca, #1f6fff);
+}
+tbody tr:hover {
+  background-color: #d1e7f7;
+  transform: scale(1.01);
+  transition: all 0.1s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
